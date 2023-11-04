@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CommonJS | pb&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.35bcedcf.css" as="style"><link rel="preload" href="/assets/js/app.072cace6.js" as="script"><link rel="preload" href="/assets/js/2.d771c900.js" as="script"><link rel="preload" href="/assets/js/69.caa510db.js" as="script"><link rel="prefetch" href="/assets/js/10.9e923107.js"><link rel="prefetch" href="/assets/js/11.8d74ba7b.js"><link rel="prefetch" href="/assets/js/12.2ac31a6e.js"><link rel="prefetch" href="/assets/js/13.5e288e94.js"><link rel="prefetch" href="/assets/js/14.99aa4f90.js"><link rel="prefetch" href="/assets/js/15.d07e8773.js"><link rel="prefetch" href="/assets/js/16.54eaa9f8.js"><link rel="prefetch" href="/assets/js/17.50c46f10.js"><link rel="prefetch" href="/assets/js/18.fecb3b89.js"><link rel="prefetch" href="/assets/js/19.06ae9ed9.js"><link rel="prefetch" href="/assets/js/20.d1931d0e.js"><link rel="prefetch" href="/assets/js/21.a7ce7d82.js"><link rel="prefetch" href="/assets/js/22.b919b3d6.js"><link rel="prefetch" href="/assets/js/23.973e03fc.js"><link rel="prefetch" href="/assets/js/24.b10933d3.js"><link rel="prefetch" href="/assets/js/25.a38f0259.js"><link rel="prefetch" href="/assets/js/26.94dd1d58.js"><link rel="prefetch" href="/assets/js/27.5a1e8a47.js"><link rel="prefetch" href="/assets/js/28.9a38745f.js"><link rel="prefetch" href="/assets/js/29.8850afc6.js"><link rel="prefetch" href="/assets/js/3.7d01c9f1.js"><link rel="prefetch" href="/assets/js/30.3503907d.js"><link rel="prefetch" href="/assets/js/31.74e20f7a.js"><link rel="prefetch" href="/assets/js/32.bbc7fa3f.js"><link rel="prefetch" href="/assets/js/33.afbf25b5.js"><link rel="prefetch" href="/assets/js/34.063550ad.js"><link rel="prefetch" href="/assets/js/35.5e38f0b8.js"><link rel="prefetch" href="/assets/js/36.1d4ee7e7.js"><link rel="prefetch" href="/assets/js/37.c4986502.js"><link rel="prefetch" href="/assets/js/38.c6a41912.js"><link rel="prefetch" href="/assets/js/39.c920f7a6.js"><link rel="prefetch" href="/assets/js/4.90d31b79.js"><link rel="prefetch" href="/assets/js/40.577aee5a.js"><link rel="prefetch" href="/assets/js/41.4a680331.js"><link rel="prefetch" href="/assets/js/42.1bb4c5a3.js"><link rel="prefetch" href="/assets/js/43.a20e9838.js"><link rel="prefetch" href="/assets/js/44.ebb6a624.js"><link rel="prefetch" href="/assets/js/45.03f5096e.js"><link rel="prefetch" href="/assets/js/46.4692dd93.js"><link rel="prefetch" href="/assets/js/47.e1088357.js"><link rel="prefetch" href="/assets/js/48.e3aca13e.js"><link rel="prefetch" href="/assets/js/49.4bed81aa.js"><link rel="prefetch" href="/assets/js/5.92fcaae9.js"><link rel="prefetch" href="/assets/js/50.1dfb1808.js"><link rel="prefetch" href="/assets/js/51.73a991dc.js"><link rel="prefetch" href="/assets/js/52.d5becf3a.js"><link rel="prefetch" href="/assets/js/53.e4b069b3.js"><link rel="prefetch" href="/assets/js/54.37ac53c9.js"><link rel="prefetch" href="/assets/js/55.feb60298.js"><link rel="prefetch" href="/assets/js/56.4eb82207.js"><link rel="prefetch" href="/assets/js/57.ac707597.js"><link rel="prefetch" href="/assets/js/58.df796283.js"><link rel="prefetch" href="/assets/js/59.0804cff0.js"><link rel="prefetch" href="/assets/js/6.048f61a4.js"><link rel="prefetch" href="/assets/js/60.056c31cf.js"><link rel="prefetch" href="/assets/js/61.3c30489f.js"><link rel="prefetch" href="/assets/js/62.5a14c224.js"><link rel="prefetch" href="/assets/js/63.1b32c081.js"><link rel="prefetch" href="/assets/js/64.60980a4f.js"><link rel="prefetch" href="/assets/js/65.33bf756e.js"><link rel="prefetch" href="/assets/js/66.26f4a23d.js"><link rel="prefetch" href="/assets/js/67.677f6dd1.js"><link rel="prefetch" href="/assets/js/68.fcd7635d.js"><link rel="prefetch" href="/assets/js/7.f3c052d3.js"><link rel="prefetch" href="/assets/js/70.6fd922b4.js"><link rel="prefetch" href="/assets/js/71.126cff96.js"><link rel="prefetch" href="/assets/js/72.9c612404.js"><link rel="prefetch" href="/assets/js/73.11f7d448.js"><link rel="prefetch" href="/assets/js/74.13030960.js"><link rel="prefetch" href="/assets/js/75.dce309d2.js"><link rel="prefetch" href="/assets/js/76.bc8a77d0.js"><link rel="prefetch" href="/assets/js/77.d596ac3d.js"><link rel="prefetch" href="/assets/js/78.38273efa.js"><link rel="prefetch" href="/assets/js/79.8cdc4ab5.js"><link rel="prefetch" href="/assets/js/8.cfc55969.js"><link rel="prefetch" href="/assets/js/80.f06bc497.js"><link rel="prefetch" href="/assets/js/81.c651a597.js"><link rel="prefetch" href="/assets/js/82.deb1fbf4.js"><link rel="prefetch" href="/assets/js/83.09893230.js"><link rel="prefetch" href="/assets/js/84.1db79eb8.js"><link rel="prefetch" href="/assets/js/85.fcedfe31.js"><link rel="prefetch" href="/assets/js/86.67ffd485.js"><link rel="prefetch" href="/assets/js/87.93d9159a.js"><link rel="prefetch" href="/assets/js/9.cf436a2c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.35bcedcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">pb's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js-ref/new操作符.html" class="nav-link">
+  深入理解JS
+</a></div><div class="nav-item"><a href="/coding/coding.html" class="nav-link">
+  编码
+</a></div><div class="nav-item"><a href="/interview/http.html" class="nav-link">
+  前端面试
+</a></div><div class="nav-item"><a href="/vue/questions.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/algorithm/dichotomy.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/style/sass.html" class="nav-link">
+  布局
+</a></div><div class="nav-item"><a href="/nodejs/nodejs内存管理.html" class="nav-link">
+  nodejs
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js-ref/new操作符.html" class="nav-link">
+  深入理解JS
+</a></div><div class="nav-item"><a href="/coding/coding.html" class="nav-link">
+  编码
+</a></div><div class="nav-item"><a href="/interview/http.html" class="nav-link">
+  前端面试
+</a></div><div class="nav-item"><a href="/vue/questions.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/algorithm/dichotomy.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/style/sass.html" class="nav-link">
+  布局
+</a></div><div class="nav-item"><a href="/nodejs/nodejs内存管理.html" class="nav-link">
+  nodejs
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/js-ref/Babel.html" class="sidebar-link">Babel</a></li><li><a href="/js-ref/CommonJS.html" aria-current="page" class="active sidebar-link">CommonJS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#一、特点" class="sidebar-link">一、特点</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#二、原理" class="sidebar-link">二、原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#变量的注入" class="sidebar-link">变量的注入</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#require原理" class="sidebar-link">require原理</a></li></ul></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#三、循环引用问题" class="sidebar-link">三、循环引用问题</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#四、module-exports和exports" class="sidebar-link">四、module.exports和exports</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#exports的错误用法" class="sidebar-link">exports的错误用法</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#module-exports使用场景" class="sidebar-link">module.exports使用场景</a></li></ul></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#五、加载时机" class="sidebar-link">五、加载时机</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#cjs运行时加载" class="sidebar-link">cjs运行时加载</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#esm编译时加载" class="sidebar-link">ESM编译时加载</a></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#esm中动态加载-import-函数" class="sidebar-link">ESM中动态加载——import()函数</a></li></ul></li><li class="sidebar-sub-header"><a href="/js-ref/CommonJS.html#模块导出区别" class="sidebar-link">模块导出区别</a></li></ul></li><li><a href="/js-ref/number.html" class="sidebar-link">数字</a></li><li><a href="/js-ref/float-number.html" class="sidebar-link">浮点数运算</a></li><li><a href="/js-ref/arrow-func.html" class="sidebar-link">箭头函数</a></li><li><a href="/js-ref/hoisting.html" class="sidebar-link">变量提升（Hoisting）</a></li><li><a href="/js-ref/IIFE.html" class="sidebar-link">立即调用函数表达式</a></li><li><a href="/js-ref/modular.html" class="sidebar-link">JS模块化</a></li><li><a href="/js-ref/async-vs-defer.html" class="sidebar-link">async-vs-defer</a></li><li><a href="/js-ref/JS中数据类型判断.html" class="sidebar-link">JS中数据类型判断</a></li><li><a href="/js-ref/new操作符.html" class="sidebar-link">new操作符</a></li><li><a href="/js-ref/浏览器进程线程.html" class="sidebar-link">浏览器进程线程</a></li><li><a href="/js-ref/event-loop.html" class="sidebar-link">什么是事件循环（翻译）</a></li><li><a href="/js-ref/JSONP.html" class="sidebar-link">JSONP</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h1> <h2 id="一、特点"><a href="#一、特点" class="header-anchor">#</a> 一、特点</h2> <ul><li>来自社区的（非官方的）模块化方案之一，解决的问题是：变量命名冲突、代码复用困难等。</li> <li>每个文件一个模块，关键API: <code>require</code>导入模块、<code>module.exports</code>和<code>exports</code>导出模块。</li></ul> <h2 id="二、原理"><a href="#二、原理" class="header-anchor">#</a> 二、原理</h2> <h3 id="变量的注入"><a href="#变量的注入" class="header-anchor">#</a> 变量的注入</h3> <p>CommonJS是一个规范，按照规范书写的模块代码中包含<code>require</code>、<code>module</code>、<code>exports</code>等变量，但是它们并没有被定义，需要运行环境提供。</p> <p>这是通过包装函数的形式实现的：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">wrapper</span> <span class="token punctuation">(</span><span class="token parameter">script</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'(function (exports, require, module, __filename, __dirname) {'</span> <span class="token operator">+</span> 
+        script <span class="token operator">+</span>
+     <span class="token string">'\n})'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>wrapper函数返回一个函数，<code>module</code>等变量（关键字），以形参的形式传递给一个包装函数，包装函数内容为我们的模块代码。</p> <p>例如：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// a.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span>
+
+<span class="token keyword">const</span> modulefunction <span class="token operator">=</span> <span class="token function">wrapper</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    module.exports = &quot;123&quot;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="require原理"><a href="#require原理" class="header-anchor">#</a> require原理</h3> <p>require函数的大致代码：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// id 为模块路径标识符</span>
+    <span class="token keyword">const</span> cashedModule <span class="token operator">=</span> Module<span class="token punctuation">.</span>cache<span class="token punctuation">[</span>id<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cachedModule<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> cachedModule<span class="token punctuation">.</span>exports <span class="token comment">// 如果已有缓存，直接返回缓存的exports</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> module <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">exports</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token literal-property property">loaded</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">...</span> <span class="token punctuation">}</span> <span class="token comment">// 创建当前模块的module</span>
+
+    Module<span class="token punctuation">.</span>_cache<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> module <span class="token comment">// 模块加入缓存</span>
+
+    <span class="token comment">// 加载模块</span>
+    <span class="token function">runInThisContext</span><span class="token punctuation">(</span><span class="token function">wrapper</span><span class="token punctuation">(</span><span class="token string">'module.exports = &quot;123&quot;'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span>module<span class="token punctuation">.</span>exports<span class="token punctuation">,</span> require<span class="token punctuation">,</span> module<span class="token punctuation">,</span> __filename<span class="token punctuation">,</span> __dirname<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span> <span class="token comment">// runInThisContext相当于eval</span>
+
+    module<span class="token punctuation">.</span>loaded <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token comment">// 加载完成</span>
+
+    <span class="token keyword">return</span> module<span class="token punctuation">.</span>exports <span class="token comment">// 返回值</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="三、循环引用问题"><a href="#三、循环引用问题" class="header-anchor">#</a> 三、循环引用问题</h2> <p>CommonJS中使用“延迟加载”的策略来解决循环引用的问题。</p> <p>模块A依赖模块B，模块B也依赖模块A。
+当A通过<code>require</code>引入模块B，模块B还未被加载，会暂时将B标记为未加载状态（module.loaded），并返回一个空对象，然后继续执行A的代码。
+当B被其他模块依赖并加载完成后，会将导出的对象（module.exports）缓存起来，并且会更新A中的标记信息(module.loaded)。</p> <p>举例：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// a.js</span>
+<span class="token keyword">const</span> getMes <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./b'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'this is a.js'</span><span class="token punctuation">)</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">say</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> message <span class="token operator">=</span> <span class="token function">getMes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// b.js</span>
+<span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./a'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span>  object <span class="token operator">=</span> <span class="token punctuation">{</span>
+   <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'haha'</span><span class="token punctuation">,</span>
+   <span class="token literal-property property">author</span><span class="token operator">:</span><span class="token string">'bob'</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'this is b.js'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a.js: '</span> <span class="token punctuation">,</span> a<span class="token punctuation">)</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'async a.js:'</span> <span class="token punctuation">,</span> a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> object
+<span class="token punctuation">}</span>
+
+<span class="token comment">// main.js</span>
+<span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./a'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./b'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'node 入口文件'</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">node</span> main.js
+
+<span class="token comment"># 打印信息</span>
+this is b.js
+a.js:  <span class="token punctuation">{</span><span class="token punctuation">}</span>
+this is a.js
+<span class="token function">node</span> 入口文件
+async a.js: <span class="token punctuation">{</span> say: <span class="token punctuation">[</span>Function <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+</code></pre></div><h2 id="四、module-exports和exports"><a href="#四、module-exports和exports" class="header-anchor">#</a> 四、module.exports和exports</h2> <p>exports是module.exports的引用，初始化为对象。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> exports <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="exports的错误用法"><a href="#exports的错误用法" class="header-anchor">#</a> exports的错误用法</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 正确示例</span>
+exports<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">say</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 错误示例</span>
+exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">say</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>因为<code>exports</code>是通过包裹函数传递给模块的变量，错误的实例中，相当于把其重新赋值了，不会再引用原来的形参了。</p> <h3 id="module-exports使用场景"><a href="#module-exports使用场景" class="header-anchor">#</a> module.exports使用场景</h3> <p>需要单独导出一个非对象的情况</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h2 id="五、加载时机"><a href="#五、加载时机" class="header-anchor">#</a> 五、加载时机</h2> <h3 id="cjs运行时加载"><a href="#cjs运行时加载" class="header-anchor">#</a> cjs运行时加载</h3> <p>这里说的动态加载是指在运行时加载。入口代码代码运行，依赖了a模块，此时加载a模块获取其返回值，然后继续运行。</p> <h3 id="esm编译时加载"><a href="#esm编译时加载" class="header-anchor">#</a> ESM编译时加载</h3> <h4 id="import命令提升"><a href="#import命令提升" class="header-anchor">#</a> import命令提升</h4> <p>import命令具有提升效果，会提升到模块头部先执行。</p> <p>举例说明：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'my_module'</span><span class="token punctuation">;</span>
+</code></pre></div><p>以上示例不会报错，因为import的执行早于foo函数的调用，本质是import是<code>编译阶段执行</code>的。</p> <h4 id="import指令不可与表达式一起使用"><a href="#import指令不可与表达式一起使用" class="header-anchor">#</a> import指令不可与表达式一起使用</h4> <p>因为编译阶段表达式无法求值，运行阶段表达式才可以求值</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 报错</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token string">'f'</span> <span class="token operator">+</span> <span class="token string">'oo'</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'my_module'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 报错</span>
+<span class="token keyword">let</span> module <span class="token operator">=</span> <span class="token string">'my_module'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> foo <span class="token punctuation">}</span> from module<span class="token punctuation">;</span>
+
+<span class="token comment">// 报错</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'module1'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'module2'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="esm中动态加载-import-函数"><a href="#esm中动态加载-import-函数" class="header-anchor">#</a> ESM中动态加载——import()函数</h3> <p>编译阶段固然有利于提高效率，但是无法做到<strong>条件加载</strong>，无法完全替代CommonJS，ES在后来的提案中新增了<code>import()</code>函数来解决这个问题。</p> <p>语法：import函数参数为模块地址，返回值为Promise对象</p> <p>有了它就可以实现<code>按需加载</code>和<code>条件加载</code></p> <h4 id="按需加载"><a href="#按需加载" class="header-anchor">#</a> 按需加载</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code>button<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./dialogBox.js'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">dialogBox</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    dialogBox<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* Error handling */</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>React中例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> lazy <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> MarkdownPreview <span class="token operator">=</span> <span class="token function">lazy</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./MarkdownPreview.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Suspense fallback<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Loading <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Preview<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>MarkdownPreview <span class="token operator">/</span><span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>Suspense<span class="token operator">&gt;</span>
+</code></pre></div><p>来自：
+https://react.dev/reference/react/lazy#lazy</p> <h4 id="条件加载"><a href="#条件加载" class="header-anchor">#</a> 条件加载</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'moduleA'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'moduleB'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="模块导出区别"><a href="#模块导出区别" class="header-anchor">#</a> 模块导出区别</h2> <ul><li>CommonJS模块导出的是值的拷贝</li> <li>ES Module模块导出的是值的引用</li></ul> <p>举例1：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// lib.js</span>
+<span class="token keyword">var</span> counter <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">incCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  counter<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">counter</span><span class="token operator">:</span> counter<span class="token punctuation">,</span>
+  <span class="token literal-property property">incCounter</span><span class="token operator">:</span> incCounter<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// main.js</span>
+<span class="token keyword">var</span> mod <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./lib'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mod<span class="token punctuation">.</span>counter<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 3</span>
+mod<span class="token punctuation">.</span><span class="token function">incCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mod<span class="token punctuation">.</span>counter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</code></pre></div><p>CommonJS中，lib模块中的counter改变后，main模块中打印看到的值没有变化。</p> <p>举例2：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// lib.js</span>
+<span class="token keyword">export</span> <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">incCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  counter<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> counter<span class="token punctuation">,</span> incCounter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./lib'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+<span class="token function">incCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 4</span>
+</code></pre></div><p>ESM中，被依赖模块lib中counter改变后，main模块中打印看到的是改变后的值。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js-ref/Babel.html" class="prev">
+        Babel
+      </a></span> <span class="next"><a href="/js-ref/number.html">
+        数字
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.072cace6.js" defer></script><script src="/assets/js/2.d771c900.js" defer></script><script src="/assets/js/69.caa510db.js" defer></script>
+  </body>
+</html>

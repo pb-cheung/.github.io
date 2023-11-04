@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>作用域+this | pb&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.35bcedcf.css" as="style"><link rel="preload" href="/assets/js/app.072cace6.js" as="script"><link rel="preload" href="/assets/js/2.d771c900.js" as="script"><link rel="preload" href="/assets/js/53.e4b069b3.js" as="script"><link rel="prefetch" href="/assets/js/10.9e923107.js"><link rel="prefetch" href="/assets/js/11.8d74ba7b.js"><link rel="prefetch" href="/assets/js/12.2ac31a6e.js"><link rel="prefetch" href="/assets/js/13.5e288e94.js"><link rel="prefetch" href="/assets/js/14.99aa4f90.js"><link rel="prefetch" href="/assets/js/15.d07e8773.js"><link rel="prefetch" href="/assets/js/16.54eaa9f8.js"><link rel="prefetch" href="/assets/js/17.50c46f10.js"><link rel="prefetch" href="/assets/js/18.fecb3b89.js"><link rel="prefetch" href="/assets/js/19.06ae9ed9.js"><link rel="prefetch" href="/assets/js/20.d1931d0e.js"><link rel="prefetch" href="/assets/js/21.a7ce7d82.js"><link rel="prefetch" href="/assets/js/22.b919b3d6.js"><link rel="prefetch" href="/assets/js/23.973e03fc.js"><link rel="prefetch" href="/assets/js/24.b10933d3.js"><link rel="prefetch" href="/assets/js/25.a38f0259.js"><link rel="prefetch" href="/assets/js/26.94dd1d58.js"><link rel="prefetch" href="/assets/js/27.5a1e8a47.js"><link rel="prefetch" href="/assets/js/28.9a38745f.js"><link rel="prefetch" href="/assets/js/29.8850afc6.js"><link rel="prefetch" href="/assets/js/3.7d01c9f1.js"><link rel="prefetch" href="/assets/js/30.3503907d.js"><link rel="prefetch" href="/assets/js/31.74e20f7a.js"><link rel="prefetch" href="/assets/js/32.bbc7fa3f.js"><link rel="prefetch" href="/assets/js/33.afbf25b5.js"><link rel="prefetch" href="/assets/js/34.063550ad.js"><link rel="prefetch" href="/assets/js/35.5e38f0b8.js"><link rel="prefetch" href="/assets/js/36.1d4ee7e7.js"><link rel="prefetch" href="/assets/js/37.c4986502.js"><link rel="prefetch" href="/assets/js/38.c6a41912.js"><link rel="prefetch" href="/assets/js/39.c920f7a6.js"><link rel="prefetch" href="/assets/js/4.90d31b79.js"><link rel="prefetch" href="/assets/js/40.577aee5a.js"><link rel="prefetch" href="/assets/js/41.4a680331.js"><link rel="prefetch" href="/assets/js/42.1bb4c5a3.js"><link rel="prefetch" href="/assets/js/43.a20e9838.js"><link rel="prefetch" href="/assets/js/44.ebb6a624.js"><link rel="prefetch" href="/assets/js/45.03f5096e.js"><link rel="prefetch" href="/assets/js/46.4692dd93.js"><link rel="prefetch" href="/assets/js/47.e1088357.js"><link rel="prefetch" href="/assets/js/48.e3aca13e.js"><link rel="prefetch" href="/assets/js/49.4bed81aa.js"><link rel="prefetch" href="/assets/js/5.92fcaae9.js"><link rel="prefetch" href="/assets/js/50.1dfb1808.js"><link rel="prefetch" href="/assets/js/51.73a991dc.js"><link rel="prefetch" href="/assets/js/52.d5becf3a.js"><link rel="prefetch" href="/assets/js/54.37ac53c9.js"><link rel="prefetch" href="/assets/js/55.feb60298.js"><link rel="prefetch" href="/assets/js/56.4eb82207.js"><link rel="prefetch" href="/assets/js/57.ac707597.js"><link rel="prefetch" href="/assets/js/58.df796283.js"><link rel="prefetch" href="/assets/js/59.0804cff0.js"><link rel="prefetch" href="/assets/js/6.048f61a4.js"><link rel="prefetch" href="/assets/js/60.056c31cf.js"><link rel="prefetch" href="/assets/js/61.3c30489f.js"><link rel="prefetch" href="/assets/js/62.5a14c224.js"><link rel="prefetch" href="/assets/js/63.1b32c081.js"><link rel="prefetch" href="/assets/js/64.60980a4f.js"><link rel="prefetch" href="/assets/js/65.33bf756e.js"><link rel="prefetch" href="/assets/js/66.26f4a23d.js"><link rel="prefetch" href="/assets/js/67.677f6dd1.js"><link rel="prefetch" href="/assets/js/68.fcd7635d.js"><link rel="prefetch" href="/assets/js/69.caa510db.js"><link rel="prefetch" href="/assets/js/7.f3c052d3.js"><link rel="prefetch" href="/assets/js/70.6fd922b4.js"><link rel="prefetch" href="/assets/js/71.126cff96.js"><link rel="prefetch" href="/assets/js/72.9c612404.js"><link rel="prefetch" href="/assets/js/73.11f7d448.js"><link rel="prefetch" href="/assets/js/74.13030960.js"><link rel="prefetch" href="/assets/js/75.dce309d2.js"><link rel="prefetch" href="/assets/js/76.bc8a77d0.js"><link rel="prefetch" href="/assets/js/77.d596ac3d.js"><link rel="prefetch" href="/assets/js/78.38273efa.js"><link rel="prefetch" href="/assets/js/79.8cdc4ab5.js"><link rel="prefetch" href="/assets/js/8.cfc55969.js"><link rel="prefetch" href="/assets/js/80.f06bc497.js"><link rel="prefetch" href="/assets/js/81.c651a597.js"><link rel="prefetch" href="/assets/js/82.deb1fbf4.js"><link rel="prefetch" href="/assets/js/83.09893230.js"><link rel="prefetch" href="/assets/js/84.1db79eb8.js"><link rel="prefetch" href="/assets/js/85.fcedfe31.js"><link rel="prefetch" href="/assets/js/86.67ffd485.js"><link rel="prefetch" href="/assets/js/87.93d9159a.js"><link rel="prefetch" href="/assets/js/9.cf436a2c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.35bcedcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">pb's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js-ref/new操作符.html" class="nav-link">
+  深入理解JS
+</a></div><div class="nav-item"><a href="/coding/coding.html" class="nav-link">
+  编码
+</a></div><div class="nav-item"><a href="/interview/http.html" class="nav-link">
+  前端面试
+</a></div><div class="nav-item"><a href="/vue/questions.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/algorithm/dichotomy.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/style/sass.html" class="nav-link">
+  布局
+</a></div><div class="nav-item"><a href="/nodejs/nodejs内存管理.html" class="nav-link">
+  nodejs
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js-ref/new操作符.html" class="nav-link">
+  深入理解JS
+</a></div><div class="nav-item"><a href="/coding/coding.html" class="nav-link">
+  编码
+</a></div><div class="nav-item"><a href="/interview/http.html" class="nav-link">
+  前端面试
+</a></div><div class="nav-item"><a href="/vue/questions.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/algorithm/dichotomy.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/style/sass.html" class="nav-link">
+  布局
+</a></div><div class="nav-item"><a href="/nodejs/nodejs内存管理.html" class="nav-link">
+  nodejs
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/coding/coding.html" class="sidebar-link">前端面试编码题目</a></li><li><a href="/coding/promise.html" class="sidebar-link">手写Promise</a></li><li><a href="/coding/深拷贝实现.html" class="sidebar-link">手写深拷贝</a></li><li><a href="/coding/eventloop-console.html" class="sidebar-link">事件循环-打印</a></li><li><a href="/coding/scope.html" aria-current="page" class="active sidebar-link">作用域+this</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/coding/scope.html#this" class="sidebar-link">this</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/coding/scope.html#函数上下文示例" class="sidebar-link">函数上下文示例</a></li><li class="sidebar-sub-header"><a href="/coding/scope.html#箭头函数中this示例" class="sidebar-link">箭头函数中this示例</a></li></ul></li><li class="sidebar-sub-header"><a href="/coding/scope.html#题目一" class="sidebar-link">题目一</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/coding/scope.html#打印输出" class="sidebar-link">打印输出：</a></li><li class="sidebar-sub-header"><a href="/coding/scope.html#解释" class="sidebar-link">解释</a></li><li class="sidebar-sub-header"><a href="/coding/scope.html#辅助理解小例子" class="sidebar-link">辅助理解小例子:</a></li></ul></li><li class="sidebar-sub-header"><a href="/coding/scope.html#题目二" class="sidebar-link">题目二</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/coding/scope.html#解释-2" class="sidebar-link">解释</a></li></ul></li></ul></li><li><a href="/coding/array-method.html" class="sidebar-link">常用数组方法</a></li><li><a href="/coding/string-method.html" class="sidebar-link">常用字符串方法</a></li><li><a href="/coding/数组去重.html" class="sidebar-link">数组去重</a></li><li><a href="/coding/重复次数最多字符.html" class="sidebar-link">字符串中重复次数最多的字符</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="作用域-this"><a href="#作用域-this" class="header-anchor">#</a> 作用域+this</h1> <h2 id="this"><a href="#this" class="header-anchor">#</a> this</h2> <blockquote><p>当前执行上下文（global、function 或 eval）的一个属性，在非严格模式下，总是指向一个对象，在严格模式下可以是任意值。</p></blockquote> <ul><li>全局上下文。即任何函数的外部，this指向全局对象，浏览器window、Node中<code>globalThis</code>；</li> <li>函数上下文。非方法调用，没有明确的调用主体的时候，this指向全局对象window，例如<code>setTimeout</code>、匿名函数等；</li> <li>方法调用。指向调用它的方法对象，与调用位置无关；</li> <li>构造函数。指向被构造的对象，即实例；</li> <li>箭头函数。指向箭头函数声明的时候，词法环境的this，跟调用的位置无关。</li> <li>修改指向。call/apply/bind，指向第一个参数；</li> <li>严格模式下。如果this没有被执行环境（execution context）定义，那 this是 为undefined；</li></ul> <h3 id="函数上下文示例"><a href="#函数上下文示例" class="header-anchor">#</a> 函数上下文示例</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">===</span> window<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">===</span> window<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="箭头函数中this示例"><a href="#箭头函数中this示例" class="header-anchor">#</a> 箭头函数中this示例</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 创建一个含有 bar 方法的 obj 对象，</span>
+<span class="token comment">// bar 返回一个函数，</span>
+<span class="token comment">// 这个函数返回 this，</span>
+<span class="token comment">// 这个返回的函数是以箭头函数创建的，</span>
+<span class="token comment">// 所以它的 this 被永久绑定到了它外层函数的 this。</span>
+<span class="token comment">// bar 的值可以在调用中设置，这反过来又设置了返回函数的值。</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">bar</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 作为 obj 对象的一个方法来调用 bar，把它的 this 绑定到 obj。</span>
+<span class="token comment">// 将返回的函数的引用赋值给 fn。</span>
+<span class="token keyword">var</span> fn <span class="token operator">=</span> obj<span class="token punctuation">.</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 直接调用 fn 而不设置 this，</span>
+<span class="token comment">// 通常 (即不使用箭头函数的情况) 默认为全局对象</span>
+<span class="token comment">// 若在严格模式则为 undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+<span class="token comment">// 但是注意，如果你只是引用 obj 的方法，</span>
+<span class="token comment">// 而没有调用它</span>
+<span class="token keyword">var</span> fn2 <span class="token operator">=</span> obj<span class="token punctuation">.</span>bar<span class="token punctuation">;</span>
+<span class="token comment">// 那么调用箭头函数后，this 指向 window，因为它从 bar 继承了 this。</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> window<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre></div><h2 id="题目一"><a href="#题目一" class="header-anchor">#</a> 题目一</h2> <p>以下代码给出打印结果：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">log0</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            a <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">log1</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+obj<span class="token punctuation">.</span><span class="token function">log0</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span><span class="token function">log1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="打印输出"><a href="#打印输出" class="header-anchor">#</a> 打印输出：</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">200</span>
+<span class="token number">20</span>
+<span class="token number">1</span>
+<span class="token number">10</span>
+</code></pre></div><h3 id="解释"><a href="#解释" class="header-anchor">#</a> 解释</h3> <ul><li>变量提升。第一个console之前，有逻辑修改打印值a。条件判断这里的<code>a=undefined</code>，因为<code>log0</code>函数内的<code>var a = 1;</code>是一个<code>声明+赋值</code>的语句，而<code>var</code>声明会被提前到函数内部最开始的地方而赋值不会，因此当前a已声明未赋值为<code>undefined</code>；</li> <li>this指向。<code>this.a</code>中<code>this</code>指向obj，因此为<code>obj.a</code>为20；</li> <li>作用域。log0函数内已被声明的a，被赋值为1，打印1；</li> <li>作用域链。log1函数内没有定义变量a，沿着作用域链查找，找到了全局作用域的a变量，为10。</li></ul> <h3 id="辅助理解小例子"><a href="#辅助理解小例子" class="header-anchor">#</a> 辅助理解小例子:</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError: a is not defined </span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>报语法错误，a未定义</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+    <span class="token keyword">var</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>a已定义声明，但未赋值，为undefined</p> <h2 id="题目二"><a href="#题目二" class="header-anchor">#</a> 题目二</h2> <p>给出代码打印内容：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">4</span> <span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> show <span class="token operator">=</span> foo<span class="token punctuation">.</span>show<span class="token punctuation">;</span>
+
+<span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+foo<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">(</span>b<span class="token punctuation">.</span>show <span class="token operator">=</span> foo<span class="token punctuation">.</span>show<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出内容：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">1</span>
+<span class="token number">2</span>
+<span class="token number">1</span>
+</code></pre></div><h3 id="解释-2"><a href="#解释-2" class="header-anchor">#</a> 解释</h3> <ul><li><code>this</code>指向全局对象。全局变量show指向foo对象show函数，<code>show()</code>运行在全局作用域中，<code>this</code>指向<code>window.a</code>为1；</li> <li><code>this</code>指向调用对象。<code>this</code>指向foo对象。</li> <li><code>this</code>指向全局对象。<code>b.show = foo.show</code>这是一个赋值表达式，赋值表达式的结果为被赋值的函数本身，然后执行这个函数，因此现在我们执行的是foo对象的show方法，并且该方法在执行时内部的this将指向全局对象。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/coding/eventloop-console.html" class="prev">
+        事件循环-打印
+      </a></span> <span class="next"><a href="/coding/array-method.html">
+        常用数组方法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.072cace6.js" defer></script><script src="/assets/js/2.d771c900.js" defer></script><script src="/assets/js/53.e4b069b3.js" defer></script>
+  </body>
+</html>
